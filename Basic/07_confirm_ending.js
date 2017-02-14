@@ -1,9 +1,16 @@
 // YouTube: https://youtu.be/AsLtWDncqeQ
 
+
+//***  https://github.com/mgeurian ***
 function confirmEnding(str, target) {
- str = str.toLowerCase().replace(/\W_/g, "");
- return target === str.slice(-Math.abs(target.length));
+ return target === str. substring(str.length - target.length);
 }
+//**************************************
+ 
+// function confirmEnding(str, target) {
+//  str = str.toLowerCase().replace(/\W_/g, "");
+//  return target === str.slice(-Math.abs(target.length));
+// }
 
 /* You can replace str.slice() with str.subtr()
    and the result will be exactly the same.
